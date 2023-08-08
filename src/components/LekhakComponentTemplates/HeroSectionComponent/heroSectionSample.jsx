@@ -23,7 +23,7 @@ export default function HeroSectionSample() {
     <div className="mt-2 p-6 grid grid-cols-1 lg:grid-cols-4 gap-x-6 bg-gray-800 rounded-md">
     <div className="bg-gray-800 col-span-1 align-middle flex w-full h-full max-w-lg p-6 text-center">
         <div className="m-auto -translate-y-12">
-            <p className="mx-auto w-fit bg-gray-900 text-slate-300 rounded-2xl py-1.5 px-4 text-sm font-semibold">Prompt Example</p>
+            <p className="mx-auto w-fit bg-gray-900 text-white rounded-2xl py-1.5 px-4 text-sm font-semibold">Prompt Example</p>
             <h1
             className="px-2 pt-3 pb-6 uppercase font-extrabold text-transparent text-6xl bg-clip-text bg-gradient-to-r from-emerald-200 to-teal-400"
             >
@@ -71,10 +71,10 @@ export default function HeroSectionSample() {
               height={20}
               patternUnits="userSpaceOnUse"
             >
-              <rect x={0} y={0} width={4} height={4} className="text-slate-300" fill="currentColor" />
+              <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
             </pattern>
           </defs>
-          <rect y={72} width={640} height={640} className="text-slate-300" fill="currentColor" />
+          <rect y={72} width={640} height={640} className="text-gray-50" fill="currentColor" />
           <rect x={118} width={404} height={784} fill="url(#9ebea6f4-a1f5-4d96-8c4e-4c2abf658047)" />
         </svg>
       </div>
@@ -88,7 +88,7 @@ export default function HeroSectionSample() {
             <div className="flex items-center flex-1">
               <div className="flex items-center justify-between w-full md:w-auto">
                 <div className="-mr-2 flex items-center md:hidden">
-                  <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-slate-300 hover:text-slate-300 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-400">
+                  <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-400">
                     <span className="sr-only">Open main menu</span>
                     <Bars2Icon className="h-6 w-6" aria-hidden="true" />
                   </Popover.Button>
@@ -97,7 +97,7 @@ export default function HeroSectionSample() {
               {data?.component?.content[0]?.nav &&
               <div className="hidden md:block md:ml-10 md:space-x-10">
                 {data.component.content[0].nav.map((item) => (
-                  <a key={item} href='#' className="font-medium text-slate-300 hover:text-slate-300">
+                  <a key={item} href='#' className="font-medium text-gray-500 hover:text-gray-900">
                     {item}
                   </a>
                 ))}
@@ -132,7 +132,7 @@ export default function HeroSectionSample() {
               <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
                 <div className="px-5 pt-4 flex items-center justify-between">
                   <div className="-mr-2">
-                    <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-slate-300 hover:text-slate-300 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-400">
+                    <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-400">
                       <span className="sr-only">Close main menu</span>
                       <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                     </Popover.Button>
@@ -144,7 +144,7 @@ export default function HeroSectionSample() {
                     <a
                       key={item}
                       href='#'
-                      className="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-slate-300 hover:bg-gray-50"
+                      className="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-gray-900 hover:bg-gray-50"
                     >
                       {item}
                     </a>
@@ -173,12 +173,12 @@ export default function HeroSectionSample() {
               }
               {data?.component?.content[0]?.title &&
                 <span className="mt-1 block text-6xl tracking-tight font-extrabold lg:text-7xl">
-                  <span className="block text-slate-300">{data.component.content[0].title}</span>
+                  <span className="block text-gray-900">{data.component.content[0].title}</span>
                 </span>
               }
               </h1>
               {data?.component?.content[0]?.body &&
-              <p className="mt-3 text-base text-slate-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+              <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
                 {data.component.content[0].body}
               </p>
               }
@@ -187,7 +187,7 @@ export default function HeroSectionSample() {
               <div className="rounded-md shadow">
                 <a
                   href="#"
-                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-slate-300 bg-teal-500 hover:bg-teal-600 md:py-2 md:px-6"
+                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-teal-500 hover:bg-teal-600 md:py-2 md:px-6"
                 >
                   {data.component.content[0].callsToAction[0]}
                 </a>
@@ -223,10 +223,10 @@ export default function HeroSectionSample() {
                     height={20}
                     patternUnits="userSpaceOnUse"
                   >
-                    <rect x={0} y={0} width={4} height={4} className="text-slate-300" fill="currentColor" />
+                    <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
                   </pattern>
                 </defs>
-                <rect y={72} width={640} height={640} className="text-slate-300" fill="currentColor" />
+                <rect y={72} width={640} height={640} className="text-gray-50" fill="currentColor" />
                 <rect x={118} width={404} height={784} fill="url(#4f4f415c-a0e9-44c2-9601-6ded5a34a13e)" />
               </svg>
           

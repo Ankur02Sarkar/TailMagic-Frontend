@@ -81,14 +81,14 @@ export default function DashboardTemplate() {
                   <label htmlFor="search-field" className="sr-only">
                     Search
                   </label>
-                  <div className="relative w-full text-slate-300 focus-within:text-slate-300">
+                  <div className="relative w-full text-gray-400 focus-within:text-gray-600">
                     <div className="absolute inset-y-0 left-0 flex items-center pointer-events-none" aria-hidden="true">
                       <MagnifyingGlassIcon className="h-5 w-5" aria-hidden="true" />
                     </div>
                     <input
                       id="search-field"
                       name="search-field"
-                      className="block w-full h-full pl-8 pr-3 py-2 border-transparent text-slate-300 placeholder-gray-500 focus:outline-none focus:ring-0 focus:border-transparent sm:text-sm"
+                      className="block w-full h-full pl-8 pr-3 py-2 border-transparent text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-0 focus:border-transparent sm:text-sm"
                       placeholder="Search for something.."
                       type="search"
                     />
@@ -98,7 +98,7 @@ export default function DashboardTemplate() {
               <div className="ml-4 flex items-center md:ml-6">
                 <button
                   type="button"
-                  className="bg-white p-1 rounded-full text-slate-300 hover:text-slate-300 focus:outline-none"
+                  className="bg-white p-1 rounded-full text-gray-400 hover:text-gray-500 focus:outline-none"
                 >
                   <span className="sr-only">View notifications</span>
                   <BellIcon className="h-6 w-6" aria-hidden="true" />
@@ -113,11 +113,11 @@ export default function DashboardTemplate() {
                         src="https://images.unsplash.com/photo-1597223557154-721c1cecc4b0"
                         alt=""
                       />
-                      <span className="hidden ml-3 text-slate-300 text-sm font-medium lg:block">
+                      <span className="hidden ml-3 text-gray-700 text-sm font-medium lg:block">
                         <span className="sr-only">Open user menu for </span>Account Details
                       </span>
                       <ChevronDownIcon
-                        className="hidden flex-shrink-0 ml-1 h-5 w-5 text-slate-300 lg:block"
+                        className="hidden flex-shrink-0 ml-1 h-5 w-5 text-gray-400 lg:block"
                         aria-hidden="true"
                       />
                     </Menu.Button>
@@ -136,7 +136,7 @@ export default function DashboardTemplate() {
                         {({ active }) => (
                           <a
                             href="#"
-                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-slate-300')}
+                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                           >
                             Your Profile
                           </a>
@@ -146,7 +146,7 @@ export default function DashboardTemplate() {
                         {({ active }) => (
                           <a
                             href="#"
-                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-slate-300')}
+                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                           >
                             Settings
                           </a>
@@ -156,7 +156,7 @@ export default function DashboardTemplate() {
                         {({ active }) => (
                           <a
                             href="#"
-                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-slate-300')}
+                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                           >
                             Logout
                           </a>
@@ -194,12 +194,12 @@ export default function DashboardTemplate() {
                           />
                           {data?.component?.content?.[0].header
                           ? (
-                            <h1 className="px-2 ml-3 text-2xl font-bold leading-7 text-slate-300 sm:leading-9 sm:truncate">
+                            <h1 className="px-2 ml-3 text-2xl font-bold leading-7 text-white sm:leading-9 sm:truncate">
                               {data.component.content[0].header}
                             </h1>
                           )
                           : (
-                            <h1 className="px-2 ml-3 text-2xl font-bold leading-7 text-slate-300 sm:leading-9 sm:truncate">
+                            <h1 className="px-2 ml-3 text-2xl font-bold leading-7 text-white sm:leading-9 sm:truncate">
                               Good morning, Alice
                             </h1>
                           )
@@ -208,9 +208,9 @@ export default function DashboardTemplate() {
                         <dl className="px-2 mt-6 flex flex-col sm:ml-3 sm:mt-1 sm:flex-row sm:flex-wrap">
                          
                           <dt className="sr-only">Account status</dt>
-                          <dd className="mt-3 flex items-center text-sm font-medium sm:mr-6 sm:mt-0 capitalize text-slate-300">
+                          <dd className="mt-3 flex items-center text-sm font-medium sm:mr-6 sm:mt-0 capitalize text-white">
                             <CheckCircleIcon
-                              className="flex-shrink-0 mr-1.5 h-5 w-5 text-slate-300"
+                              className="flex-shrink-0 mr-1.5 h-5 w-5 text-white"
                               aria-hidden="true"
                             />
                             Verified account
@@ -228,10 +228,10 @@ export default function DashboardTemplate() {
               <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
               {data?.component?.content?.[0].statsTitle
                 ? (
-                  <h2 className="p-2 text-lg leading-6 font-semibold text-slate-300">{data?.component?.content?.[0].statsTitle}</h2>
+                  <h2 className="p-2 text-lg leading-6 font-semibold text-gray-900">{data?.component?.content?.[0].statsTitle}</h2>
                   )
                 : (
-                  <h2 className="p-2 text-lg leading-6 font-semibold text-slate-300">Your Statistics</h2>
+                  <h2 className="p-2 text-lg leading-6 font-semibold text-gray-900">Your Statistics</h2>
                   )
               }
                 <div className="mt-2 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -243,10 +243,10 @@ export default function DashboardTemplate() {
                         <div className="flex items-center">
                           <div className="flex-shrink-0">
                           {(i==0)
-                            ? <ChartBarIcon className="h-6 w-6 text-slate-300" aria-hidden="true" />
+                            ? <ChartBarIcon className="h-6 w-6 text-gray-400" aria-hidden="true" />
                             : (i==1)
-                              ? <FlagIcon className="h-6 w-6 text-slate-300" aria-hidden="true" />
-                              : <ArrowTrendingUpIcon className="h-6 w-6 text-slate-300" aria-hidden="true" />
+                              ? <FlagIcon className="h-6 w-6 text-gray-400" aria-hidden="true" />
+                              : <ArrowTrendingUpIcon className="h-6 w-6 text-gray-400" aria-hidden="true" />
                           }
                             
                           </div>
@@ -255,13 +255,13 @@ export default function DashboardTemplate() {
                             <dl>
                               {statistic.title &&
                                 (
-                                  <dt className="text-md font-medium text-slate-300">{statistic.title}</dt>
+                                  <dt className="text-md font-medium text-gray-500">{statistic.title}</dt>
                                 )
                               }
                               <dd>
                               {statistic.data &&
                                 (
-                                  <div className="text-lg font-medium text-slate-300">{statistic.data}</div>
+                                  <div className="text-lg font-medium text-gray-900">{statistic.data}</div>
                                 )
                               }
                               </dd>
@@ -274,7 +274,7 @@ export default function DashboardTemplate() {
                         backgroundColor: selectedColor
                       }}>
                         <div className="text-sm">
-                          <a href="#" className="font-medium text-slate-300">
+                          <a href="#" className="font-medium text-white">
                             View details &rarr;
                           </a>
                         </div>
@@ -286,13 +286,13 @@ export default function DashboardTemplate() {
                       <div className="p-5">
                         <div className="flex items-center">
                           <div className="flex-shrink-0">
-                            <card.icon className="h-6 w-6 text-slate-300" aria-hidden="true" />
+                            <card.icon className="h-6 w-6 text-gray-400" aria-hidden="true" />
                           </div>
                           <div className="ml-5 w-0 flex-1">
                             <dl>
-                              <dt className="text-md font-medium text-slate-300">{card.name}</dt>
+                              <dt className="text-md font-medium text-gray-500">{card.name}</dt>
                               <dd>
-                                <div className="text-lg font-medium text-slate-300">{card.amount}</div>
+                                <div className="text-lg font-medium text-gray-900">{card.amount}</div>
                               </dd>
                             </dl>
                           </div>
@@ -303,7 +303,7 @@ export default function DashboardTemplate() {
                         backgroundColor: selectedColor
                       }}>
                         <div className="text-sm">
-                          <a href={card.href} className="font-medium text-slate-300">
+                          <a href={card.href} className="font-medium text-white">
                             View details &rarr;
                           </a>
                         </div>
@@ -315,12 +315,12 @@ export default function DashboardTemplate() {
               </div>
               {data?.component?.content?.[0].tableTitle
               ? (
-                <h2 className="max-w-6xl mx-auto mt-8 px-4 py-2 text-lg leading-6 font-semibold text-slate-300 sm:px-6 lg:px-8">
+                <h2 className="max-w-6xl mx-auto mt-8 px-4 py-2 text-lg leading-6 font-semibold text-gray-900 sm:px-6 lg:px-8">
                   {data.component.content[0].tableTitle}
                 </h2>
               )
               : (
-                <h2 className="max-w-6xl mx-auto mt-8 px-4 py-2 text-lg leading-6 font-semibold text-slate-300 sm:px-6 lg:px-8">
+                <h2 className="max-w-6xl mx-auto mt-8 px-4 py-2 text-lg leading-6 font-semibold text-gray-900 sm:px-6 lg:px-8">
                   Actions Table
                 </h2>
               )
@@ -335,13 +335,13 @@ export default function DashboardTemplate() {
                       <a href="#" className="block px-4 py-4 bg-white hover:bg-gray-50">
                         <span className="flex items-center space-x-4">
                           <span className="flex-1 flex space-x-2 truncate">
-                            <PencilSquareIcon className="flex-shrink-0 h-5 w-5 text-slate-300" aria-hidden="true" />
-                            <span className="flex flex-col text-slate-300 text-sm truncate">
+                            <PencilSquareIcon className="flex-shrink-0 h-5 w-5 text-gray-400" aria-hidden="true" />
+                            <span className="flex flex-col text-gray-500 text-sm truncate">
                               <span className="truncate">{action.name}</span>
                               <time>{action.date}</time>
                             </span>
                           </span>
-                          <ChevronRightIcon className="flex-shrink-0 h-5 w-5 text-slate-300" aria-hidden="true" />
+                          <ChevronRightIcon className="flex-shrink-0 h-5 w-5 text-gray-400" aria-hidden="true" />
                         </span>
                       </a>
                     </li>
@@ -360,13 +360,13 @@ export default function DashboardTemplate() {
                       }}>
                         <thead>
                           <tr>
-                            <th className="px-6 py-3 text-left text-xs font-medium text-slate-300 uppercase tracking-wider">
+                            <th className="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider">
                               Action
                             </th>
-                            <th className="hidden px-6 py-3 text-left text-xs font-medium text-slate-300 uppercase tracking-wider md:block">
+                            <th className="hidden px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider md:block">
                               Status
                             </th>
-                            <th className="px-6 py-3 text-right text-xs font-medium text-slate-300 uppercase tracking-wider">
+                            <th className="px-6 py-3 text-right text-xs font-medium text-white uppercase tracking-wider">
                               Date
                             </th>
                           </tr>
@@ -374,20 +374,20 @@ export default function DashboardTemplate() {
                         <tbody className="bg-white divide-y divide-gray-200">
                           {data?.component?.content?.[0].actions && data.component.content[0].actions.map((action) => (
                             <tr key={action.id} className="bg-white">
-                              <td className="max-w-0 w-full px-6 py-4 whitespace-nowrap text-sm text-slate-300">
+                              <td className="max-w-0 w-full px-6 py-4 whitespace-nowrap text-sm text-gray-900">
                                 <div className="flex">
                                   <a href="#" className="group inline-flex space-x-2 truncate text-sm">
                                     <PencilSquareIcon
-                                      className="flex-shrink-0 h-5 w-5 text-slate-300 group-hover:text-slate-300"
+                                      className="flex-shrink-0 h-5 w-5 text-gray-400 group-hover:text-gray-500"
                                       aria-hidden="true"
                                     />
-                                    <p className="text-slate-300 truncate group-hover:text-slate-300">
+                                    <p className="text-gray-500 truncate group-hover:text-gray-900">
                                       {action.name}
                                     </p>
                                   </a>
                                 </div>
                               </td>
-                              <td className="hidden px-6 py-4 whitespace-nowrap text-sm text-slate-300 md:block">
+                              <td className="hidden px-6 py-4 whitespace-nowrap text-sm text-gray-500 md:block">
                                 <span
                                   className={classNames(
                                     statusStyles[action.status],
@@ -397,7 +397,7 @@ export default function DashboardTemplate() {
                                   {action.status}
                                 </span>
                               </td>
-                              <td className="px-6 py-4 text-right whitespace-nowrap text-sm text-slate-300">
+                              <td className="px-6 py-4 text-right whitespace-nowrap text-sm text-gray-500">
                                 <time>{action.date}</time>
                               </td>
                             </tr>

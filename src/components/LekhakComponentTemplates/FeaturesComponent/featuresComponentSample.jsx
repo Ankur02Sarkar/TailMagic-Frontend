@@ -42,7 +42,7 @@ function FeaturesTemplate() {
               height={20}
               patternUnits="userSpaceOnUse"
             >
-              <rect x={0} y={0} width={4} height={4} className="text-slate-300" fill="currentColor" />
+              <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
             </pattern>
           </defs>
           <rect width={404} height={784} fill="url(#b1e6e422-73f8-40a6-b5d9-c8586e37e0e7)" />
@@ -51,12 +51,12 @@ function FeaturesTemplate() {
         <div className="relative">
           {data?.component?.content?.[0]?.header
             ? (
-                <h2 className="text-center text-4xl leading-8 font-extrabold tracking-tight text-slate-300 lg:text-5xl">
+                <h2 className="text-center text-4xl leading-8 font-extrabold tracking-tight text-gray-900 lg:text-5xl">
                 {data.component.content[0].header}
                 </h2>
               )
             : (
-                <h2 className="text-center text-4xl leading-8 font-extrabold tracking-tight text-slate-300 lg:text-5xl">
+                <h2 className="text-center text-4xl leading-8 font-extrabold tracking-tight text-gray-900 lg:text-5xl">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit
                 </h2>
               )
@@ -64,12 +64,12 @@ function FeaturesTemplate() {
           
          {data?.component?.content?.[0]?.subHeader
           ? (
-              <p className="mt-4 max-w-3xl mx-auto text-center text-lg text-slate-300">
+              <p className="mt-4 max-w-3xl mx-auto text-center text-lg text-gray-500">
               {data.component.content[0].subHeader}
               </p>
             )
           : (
-              <p className="mt-4 max-w-3xl mx-auto text-center text-lg text-slate-300">
+              <p className="mt-4 max-w-3xl mx-auto text-center text-lg text-gray-500">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in,
               accusamus quisquam.
               </p>
@@ -81,12 +81,12 @@ function FeaturesTemplate() {
           <div className="relative">
             {data?.component?.content?.[0]?.featureBlocks?.[0]?.title
               ? (
-                  <h3 className="text-xl font-extrabold text-slate-300 tracking-tight lg:text-2xl">
+                  <h3 className="text-xl font-extrabold text-gray-900 tracking-tight lg:text-2xl">
                     {data.component.content[0].featureBlocks[0].title}
                   </h3>
                 )
               : (
-                <h3 className="text-xl font-extrabold text-slate-300 tracking-tight lg:text-2xl">
+                <h3 className="text-xl font-extrabold text-gray-900 tracking-tight lg:text-2xl">
                   Lorem ipsum
                 </h3>
               )
@@ -94,12 +94,12 @@ function FeaturesTemplate() {
             
             {data?.component?.content?.[0]?.featureBlocks?.[0]?.titleDesc
               ? (
-                  <p className="mt-3 text-md text-slate-300">
+                  <p className="mt-3 text-md text-gray-500">
                   {data.component.content[0].featureBlocks[0].titleDesc}
                   </p>
                 )
               : (
-                <p className="mt-3 text-md text-slate-300">
+                <p className="mt-3 text-md text-gray-500">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima sequi recusandae, porro maiores
                   officia assumenda aliquam laborum ab aliquid veritatis impedit odit adipisci optio iste blanditiis facere.
                   Totam, velit.
@@ -112,12 +112,12 @@ function FeaturesTemplate() {
               {data.component.content[0].featureBlocks[0].subPoints.map((item) => (
                 <div key={item.id} className="relative">
                   <dt>
-                  <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-gray-800 text-slate-300">
+                  <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-gray-800 text-white">
                     {FeatureBlockOneIcons[item.id].icon}
                   </div>
-                    <p className="ml-16 text-md font-semibold tracking-tight leading-6 text-slate-300">{item.point}</p>
+                    <p className="ml-16 text-md font-semibold tracking-tight leading-6 text-gray-900">{item.point}</p>
                   </dt>
-                  <dd className="mt-2 ml-16 text-base text-slate-300">{item.pointDesc}</dd>
+                  <dd className="mt-2 ml-16 text-base text-gray-500">{item.pointDesc}</dd>
                 </div>
               ))}
             </dl> )
@@ -141,7 +141,7 @@ function FeaturesTemplate() {
                   height={20}
                   patternUnits="userSpaceOnUse"
                 >
-                  <rect x={0} y={0} width={4} height={4} className="text-slate-300" fill="currentColor" />
+                  <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
                 </pattern>
               </defs>
               <rect width={784} height={404} fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)" />
@@ -172,7 +172,7 @@ function FeaturesTemplate() {
               height={20}
               patternUnits="userSpaceOnUse"
             >
-              <rect x={0} y={0} width={4} height={4} className="text-slate-300" fill="currentColor" />
+              <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
             </pattern>
           </defs>
           <rect width={404} height={784} fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)" />
@@ -182,18 +182,18 @@ function FeaturesTemplate() {
           <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
             <div className="lg:col-start-2">
             {data?.component?.content?.[0]?.featureBlocks?.[1]?.title
-              ? <h3 className="text-xl font-extrabold text-slate-300 tracking-tight lg:text-2xl">{data.component.content[0].featureBlocks[1].title}</h3>
-              : <h3 className="text-xl font-extrabold text-slate-300 tracking-tight lg:text-2xl">Lorem Ipsum</h3>
+              ? <h3 className="text-xl font-extrabold text-gray-900 tracking-tight lg:text-2xl">{data.component.content[0].featureBlocks[1].title}</h3>
+              : <h3 className="text-xl font-extrabold text-gray-900 tracking-tight lg:text-2xl">Lorem Ipsum</h3>
             }
               
             {data?.component?.content?.[0]?.featureBlocks?.[1]?.titleDesc
               ? (
-                <p className="mt-3 text-md text-slate-300">
+                <p className="mt-3 text-md text-gray-500">
                   {data.component.content[0].featureBlocks[1].titleDesc}
                 </p>
                 )
               : (
-                  <p className="mt-3 text-md text-slate-300">
+                  <p className="mt-3 text-md text-gray-500">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ex obcaecati natus eligendi delectus,
                   cum deleniti sunt in labore nihil quod quibusdam expedita nemo.
                   </p>
@@ -205,12 +205,12 @@ function FeaturesTemplate() {
                 {data.component.content[0].featureBlocks[1].subPoints.map((item) => (
                   <div key={item.id} className="relative">
                     <dt>
-                      <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-gray-800 text-slate-300">
+                      <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-gray-800 text-white">
                         {FeatureBlockTwoIcons[item.id].icon}
                       </div>
-                      <p className="ml-16 text-md leading-6 font-semibold text-slate-300">{item.point}</p>
+                      <p className="ml-16 text-md leading-6 font-semibold text-gray-900">{item.point}</p>
                     </dt>
-                    <dd className="mt-2 ml-16 text-base text-slate-300">{item.pointDesc}</dd>
+                    <dd className="mt-2 ml-16 text-base text-gray-500">{item.pointDesc}</dd>
                   </div>
                 ))}
               </dl> )
@@ -235,7 +235,7 @@ function FeaturesTemplate() {
                     height={20}
                     patternUnits="userSpaceOnUse"
                   >
-                    <rect x={0} y={0} width={4} height={4} className="text-slate-300" fill="currentColor" />
+                    <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
                   </pattern>
                 </defs>
                 <rect width={784} height={404} fill="url(#e80155a9-dfde-425a-b5ea-1f6fadd20131)" />
@@ -269,7 +269,7 @@ export default function FeaturesComponentSample() {
     </>
     <div className="bg-gray-800 col-span-1 align-middle flex w-full h-full max-w-lg text-center">
         <div className="mt-24 py-24">
-            <p className="mx-auto w-fit bg-gray-900 text-slate-300 rounded-2xl py-1.5 px-4 text-sm font-semibold">Prompt Example</p>
+            <p className="mx-auto w-fit bg-gray-900 text-white rounded-2xl py-1.5 px-4 text-sm font-semibold">Prompt Example</p>
             <h1
             className="px-2 pt-3 pb-6 uppercase font-extrabold text-transparent text-6xl bg-clip-text bg-gradient-to-r from-emerald-200 to-teal-400"
             >

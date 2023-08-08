@@ -50,10 +50,10 @@ export default function HeroSectionTemplate() {
               height={20}
               patternUnits="userSpaceOnUse"
             >
-              <rect x={0} y={0} width={4} height={4} className="text-slate-300" fill="currentColor" />
+              <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
             </pattern>
           </defs>
-          <rect y={72} width={640} height={640} className="text-slate-300" fill="currentColor" />
+          <rect y={72} width={640} height={640} className="text-gray-50" fill="currentColor" />
           <rect x={118} width={404} height={784} fill="url(#9ebea6f4-a1f5-4d96-8c4e-4c2abf658047)" />
         </svg>
       </div>
@@ -67,7 +67,7 @@ export default function HeroSectionTemplate() {
             <div className="flex items-center flex-1">
               <div className="flex items-center justify-between w-full md:w-auto">
                 <div className="-mr-2 flex items-center md:hidden">
-                  <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-slate-300 hover:text-slate-300 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset">
+                  <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset">
                     <span className="sr-only">Open main menu</span>
                     <Bars2Icon className="h-6 w-6" aria-hidden="true" />
                   </Popover.Button>
@@ -76,7 +76,7 @@ export default function HeroSectionTemplate() {
               {data?.component?.content[0]?.nav &&
               <div className="hidden md:block md:ml-10 md:space-x-10">
                 {data.component.content[0].nav.map((item) => (
-                  <a key={item} href='#' className="font-medium text-slate-300 hover:text-slate-300">
+                  <a key={item} href='#' className="font-medium text-gray-500 hover:text-gray-900">
                     {item}
                   </a>
                 ))}
@@ -113,7 +113,7 @@ export default function HeroSectionTemplate() {
               <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
                 <div className="px-5 pt-4 flex items-center justify-between">
                   <div className="-mr-2">
-                    <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-slate-300 hover:text-slate-300 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset">
+                    <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset">
                       <span className="sr-only">Close main menu</span>
                       <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                     </Popover.Button>
@@ -125,7 +125,7 @@ export default function HeroSectionTemplate() {
                     <a
                       key={item}
                       href='#'
-                      className="block p-3 rounded-md text-base font-medium text-slate-300 hover:text-slate-300 hover:bg-gray-50"
+                      className="block p-3 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                     >
                       {item}
                     </a>
@@ -159,12 +159,12 @@ export default function HeroSectionTemplate() {
               }
               {data?.component?.content[0]?.title &&
                 <span className="mt-1 block text-6xl tracking-tight font-extrabold lg:text-7xl">
-                  <span className="block text-slate-300">{data.component.content[0].title}</span>
+                  <span className="block text-gray-900">{data.component.content[0].title}</span>
                 </span>
               }
               </h1>
               {data?.component?.content[0]?.body &&
-              <p className="mt-3 text-base text-slate-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+              <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
                 {data.component.content[0].body}
               </p>
               }
@@ -173,7 +173,7 @@ export default function HeroSectionTemplate() {
               <div className="rounded-md shadow">
                 <a
                   href="#"
-                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-slate-300 md:py-2 md:px-6"
+                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white md:py-2 md:px-6"
                   style={{
                     backgroundColor: selectedColor
                   }}
@@ -215,10 +215,10 @@ export default function HeroSectionTemplate() {
                     height={20}
                     patternUnits="userSpaceOnUse"
                   >
-                    <rect x={0} y={0} width={4} height={4} className="text-slate-300" fill="currentColor" />
+                    <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
                   </pattern>
                 </defs>
-                <rect y={72} width={640} height={640} className="text-slate-300" fill="currentColor" />
+                <rect y={72} width={640} height={640} className="text-gray-50" fill="currentColor" />
                 <rect x={118} width={404} height={784} fill="url(#4f4f415c-a0e9-44c2-9601-6ded5a34a13e)" />
               </svg>
           

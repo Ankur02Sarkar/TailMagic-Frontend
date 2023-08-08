@@ -60,7 +60,7 @@ function SingleVerticalCardTemplate({imageUrls, idx}){
                 {/* calls to action */}
                 <div className="flex-auto flex space-x-4">
                 {data?.component?.content?.[idx]?.callsToAction[0] && (
-                  <button className="h-10 px-6 font-semibold rounded-md bg-black text-slate-300" 
+                  <button className="h-10 px-6 font-semibold rounded-md bg-black text-white" 
                   type="submit"
                   style={{
                     backgroundColor: selectedColor

@@ -15,15 +15,15 @@ import Typewriter from "typewriter-effect";
 import "./heroSection.css";
 
 const Model = () => {
-  const gltf = useLoader(GLTFLoader, "/plant.glb");
+  const gltf = useLoader(GLTFLoader, "/car.glb");
 
   return (
     <>
       <primitive
         object={gltf.scene}
-        scale={4}
-        position={[0, -0.9, 0]}
-        rotation-y={-0.2}
+        scale={2}
+        position={[0, -1, 0]}
+        rotation={[0, 0.2, 0]}
       />
     </>
   );
@@ -166,7 +166,7 @@ export default function HeroSection() {
                       onInit={(typewriter) => {
                         typewriter
                           .typeString(
-                            "Create a Tailwind card for a potted plant with title, body and CTA button"
+                            "Create a Tailwind card for a Chevrolet C2 Ivory with title, body and button"
                           )
                           .pauseFor(1000)
                           .deleteAll()
@@ -250,18 +250,20 @@ export default function HeroSection() {
                         </div>
                         <div className="pt-2 px-6">
                           <h5 className="text-slate-300 text-xl font-semibold mb-2">
-                            Monstera Plant
+                            Chevrolet C2 Ivory
                           </h5>
                           <p className="text-slate-300 text-base mb-4">
-                            Native to Central and South America, the Monstera is
-                            a tropical perennial that's typically grown indoors.
+                            The Chevrolet Corvette (C2) is the second generation
+                            of the Corvette sports car, produced by the
+                            Chevrolet division of General Motors (GM) for the
+                            1963 through 1967 model years
                           </p>
                         </div>
                         <button
                           type="button"
-                          className="w-auto inline-block px-6 py-2 w-full bg-teal-400 text-slate-300 font-medium text-sm leading-tight rounded-b-lg shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:bg-teal-400 active:shadow-lg transition duration-150 ease-in-out mb-[10px] rounded-lg "
+                          className="w-auto inline-block px-6 py-2 w-full bg-black text-slate-300 font-medium text-sm leading-tight rounded-b-lg shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:bg-teal-400 active:shadow-lg transition duration-150 ease-in-out mb-[10px] rounded-lg "
                         >
-                          Shop now →
+                          Join the Waitlist →
                         </button>
                       </div>
                     </div>

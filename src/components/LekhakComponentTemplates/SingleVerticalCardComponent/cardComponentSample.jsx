@@ -22,7 +22,7 @@ function SingleVerticalCardTemplate(){
                   </h1>
                 )}
                 {/* tag */}
-                <div className="text-sm bg-green-300 px-3 py-1 rounded-xl font-semibold text-slate-300">
+                <div className="text-sm bg-green-300 px-3 py-1 rounded-xl font-semibold text-white">
                   Trending 
                 </div>
                 {/* text body */}
@@ -40,7 +40,7 @@ function SingleVerticalCardTemplate(){
                 {/* calls to action */}
                 <div className="flex-auto flex space-x-4">
                 {data.component.content[0].callsToAction[0] && (
-                  <button className="h-10 px-6 font-semibold rounded-md bg-black text-slate-300" type="submit">
+                  <button className="h-10 px-6 font-semibold rounded-md bg-black text-white" type="submit">
                     {data.component.content[0].callsToAction[0]}
                   </button>
                 )}
@@ -76,7 +76,7 @@ export default function CardComponentSample() {
       </>
       <div className="bg-gray-800 mx-auto col-span-1 align-middle flex w-full h-full max-w-lg text-center">
           <div className="mt-24 py-24">
-              <p className="mx-auto w-fit bg-gray-900 text-slate-300 rounded-2xl py-1.5 px-4 text-sm font-semibold">Prompt Example</p>
+              <p className="mx-auto w-fit bg-gray-900 text-white rounded-2xl py-1.5 px-4 text-sm font-semibold">Prompt Example</p>
               <h1
               className="px-2 pt-3 pb-6 uppercase font-extrabold text-transparent text-6xl bg-clip-text bg-gradient-to-r from-emerald-200 to-teal-400"
               >

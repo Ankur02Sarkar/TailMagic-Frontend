@@ -26,7 +26,7 @@ export default function ModalTemplate() {
 
   return (
     <div className="p-12 my-12">
-    <button onClick={() => setOpen(true)}  className="w-full inline-flex justify-center rounded-md border border-transparent shadow-lg px-4 py-2 bg-gray-800 text-md font-medium text-slate-300 sm:ml-3 sm:w-auto">Open Modal</button>
+    <button onClick={() => setOpen(true)}  className="w-full inline-flex justify-center rounded-md border border-transparent shadow-lg px-4 py-2 bg-gray-800 text-md font-medium text-white sm:ml-3 sm:w-auto">Open Modal</button>
     <Transition.Root show={open} as={Fragment}>
       <Dialog as="div" className="fixed z-10 inset-0 overflow-y-auto" onClose={setOpen}>
         <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
@@ -59,7 +59,7 @@ export default function ModalTemplate() {
               <div className="hidden sm:block absolute top-0 right-0 pt-4 pr-4">
                 <button
                   type="button"
-                  className="bg-white rounded-md text-slate-300 hover:text-slate-300 focus:outline-none"
+                  className="bg-white rounded-md text-gray-400 hover:text-gray-500 focus:outline-none"
                   onClick={() => setOpen(false)}
                 >
                   <span className="sr-only">Close</span>
@@ -81,7 +81,7 @@ export default function ModalTemplate() {
                 
 
                 <div className="mt-3 text-center sm:ml-4">
-                  <Dialog.Title as="h3" className="py-1 text-lg leading-6 font-semibold text-slate-300">
+                  <Dialog.Title as="h3" className="py-1 text-lg leading-6 font-semibold text-gray-900">
                   {data?.component?.content?.[0].title &&
                     <span className="inline-block p-1 align-middle">{data.component.content[0].title}</span>
                   }
@@ -89,7 +89,7 @@ export default function ModalTemplate() {
 
                   <div className="mt-2">
                   {data?.component?.content?.[0].body &&
-                    <p className="text-sm text-slate-300">
+                    <p className="text-sm text-gray-500">
                       {data.component.content[0].body}
                     </p>
                   }
@@ -100,7 +100,7 @@ export default function ModalTemplate() {
               
                 <button
                   type="button"
-                  className="flex-1 text-center w-full rounded-md border border-transparent bg-gray-800 shadow-sm px-4 py-2 font-medium text-slate-300 focus:outline-none hover:opacity-75"
+                  className="flex-1 text-center w-full rounded-md border border-transparent bg-gray-800 shadow-sm px-4 py-2 font-medium text-white focus:outline-none hover:opacity-75"
                   style={{
                     backgroundColor: selectedColor
                   }}
@@ -112,7 +112,7 @@ export default function ModalTemplate() {
                 </button>
                 <button
                   type="button"
-                  className="flex-1 text-center mt-3 w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-gray-800 font-medium text-slate-300 focus:outline-none hover:opacity-75 sm:mt-0"
+                  className="flex-1 text-center mt-3 w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-gray-800 font-medium text-white focus:outline-none hover:opacity-75 sm:mt-0"
                   onClick={() => setOpen(false)}
                 >
                 {data?.component?.content?.[0]?.options?.[1]

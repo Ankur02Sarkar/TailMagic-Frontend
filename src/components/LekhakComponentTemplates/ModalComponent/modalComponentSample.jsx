@@ -8,7 +8,7 @@ function ModalTemplate() {
 
   return (
     <div className="p-12 my-12">
-    <button onClick={() => setOpen(true)}  className="w-full inline-flex justify-center rounded-md border border-transparent shadow-lg px-4 py-2 bg-gray-800 text-md font-medium text-slate-300 sm:ml-3 sm:w-auto">Open Modal</button>
+    <button onClick={() => setOpen(true)}  className="w-full inline-flex justify-center rounded-md border border-transparent shadow-lg px-4 py-2 bg-gray-800 text-md font-medium text-white sm:ml-3 sm:w-auto">Open Modal</button>
     <Transition.Root show={open} as={Fragment}>
       <Dialog as="div" className="fixed z-10 inset-0 overflow-y-auto" onClose={setOpen}>
         <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
@@ -41,7 +41,7 @@ function ModalTemplate() {
               <div className="hidden sm:block absolute top-0 right-0 pt-4 pr-4">
                 <button
                   type="button"
-                  className="bg-white rounded-md text-slate-300 hover:text-slate-300 focus:outline-none"
+                  className="bg-white rounded-md text-gray-400 hover:text-gray-500 focus:outline-none"
                   onClick={() => setOpen(false)}
                 >
                   <span className="sr-only">Close</span>
@@ -61,12 +61,12 @@ function ModalTemplate() {
                 
 
                 <div className="mt-3 text-center sm:ml-4">
-                  <Dialog.Title as="h3" className="py-1 text-lg leading-6 font-medium text-slate-300">
+                  <Dialog.Title as="h3" className="py-1 text-lg leading-6 font-medium text-gray-900">
                     <span className="inline-block p-1 align-middle">Payment Successful</span>
                     <CheckCircleIcon className="inline-block h-6 w-6 text-emerald-600" aria-hidden="true" />
                   </Dialog.Title>
                   <div className="mt-2">
-                    <p className="text-sm text-slate-300">
+                    <p className="text-sm text-gray-500">
                     Thank you for your payment. Your transaction is complete.
                     </p>
                   </div>
@@ -75,14 +75,14 @@ function ModalTemplate() {
               <div className="mt-8 sm:flex justify-items-stretch gap-x-4">
                 <button
                   type="button"
-                  className="flex-1 text-center w-full rounded-md border border-transparent shadow-sm px-4 py-2 bg-emerald-400 font-medium text-slate-300 hover:bg-emerald-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-300"
+                  className="flex-1 text-center w-full rounded-md border border-transparent shadow-sm px-4 py-2 bg-emerald-400 font-medium text-white hover:bg-emerald-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-300"
                   onClick={() => setOpen(false)}
                 >
                   View details
                 </button>
                 <button
                   type="button"
-                  className="flex-1 text-center mt-3 w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-gray-800 font-medium text-slate-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 sm:mt-0"
+                  className="flex-1 text-center mt-3 w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-gray-800 font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 sm:mt-0"
                   onClick={() => setOpen(false)}
                 >
                   Return to homepage
@@ -107,7 +107,7 @@ export default function ModalComponentSample() {
       
       <div className="bg-gray-800 col-span-1 align-middle flex w-full h-full max-w-md text-center">
         <div className="m-auto -translate-y-6">
-            <p className="mx-auto w-fit bg-gray-900 text-slate-300 rounded-2xl py-1.5 px-4 text-sm font-semibold">Prompt Example</p>
+            <p className="mx-auto w-fit bg-gray-900 text-white rounded-2xl py-1.5 px-4 text-sm font-semibold">Prompt Example</p>
             <h1
             className="px-2 pt-3 pb-6 uppercase font-extrabold text-transparent text-5xl bg-clip-text bg-gradient-to-r from-emerald-200 to-teal-400"
             >

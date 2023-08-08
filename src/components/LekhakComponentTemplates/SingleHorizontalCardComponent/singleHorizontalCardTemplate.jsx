@@ -37,7 +37,7 @@ function SingleHorizontalCardTemplate({imageUrls, idx}){
       <h1 className="flex-auto text-lg font-semibold text-slate-900">
        {data.component.content[idx].title}
       </h1>
-      <div className="text-sm bg-green-300 px-3 py-1 rounded-xl font-semibold text-slate-300">
+      <div className="text-sm bg-green-300 px-3 py-1 rounded-xl font-semibold text-white">
         Trending 
       </div>
       <div className="w-full flex-none text-sm font-medium text-slate-500 mt-2">
@@ -48,7 +48,7 @@ function SingleHorizontalCardTemplate({imageUrls, idx}){
     </div>
     <div className="flex space-x-4 text-sm font-medium">
       <div className="flex-auto flex space-x-4">
-        <button className="h-10 px-6 font-semibold rounded-md bg-black text-slate-300" type="submit">
+        <button className="h-10 px-6 font-semibold rounded-md bg-black text-white" type="submit">
         {data.component.content[idx].callsToAction[0]}
         </button>
         <button className="h-10 px-6 font-semibold rounded-md border border-slate-200 text-slate-900" type="button">

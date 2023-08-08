@@ -26,42 +26,42 @@ const components = [
     name: "Hero Section",
     description:
       "Make the first impression of your website count by tailoring the hero section to your needs.",
-    href: "/examples/hero-section",
+    href: "#",
     icon: RocketLaunchIcon,
   },
   {
     name: "Dashboard",
     description:
       "Present daily statistics, updates and tools in a more impactful manner.",
-    href: "/examples/dashboard-component",
+    href: "#",
     icon: ChartBarIcon,
   },
   {
     name: "Modal",
     description:
       "Bring important information front and center with modals and popups.",
-    href: "/examples/modal-component",
+    href: "#",
     icon: ArrowPathIcon,
   },
   {
     name: "Cards",
     description:
       "Showcase your content and actions with the building blocks of user interfaces.",
-    href: "/examples/card-component",
+    href: "#",
     icon: Squares2X2Icon,
   },
   {
     name: "Features Section",
     description:
       "Highlight the standout characteristics and capabilities of your creation.",
-    href: "/examples/features-section",
+    href: "#",
     icon: PuzzlePieceIcon,
   },
   {
     name: "Testimonials",
     description:
       "Establish trust and satisfaction by displaying what users have to say about your work.",
-    href: "/examples/testimonial-component",
+    href: "#",
     icon: CheckCircleIcon,
   },
 ];
@@ -74,13 +74,13 @@ const callsToAction = [
   },
   {
     name: "Request Feature",
-    href: "https://github.com/A-HK/TailMagic-tailwind-gpt3/issues/new?assignees=&labels=&template=%F0%9F%9A%80-feature-request.md&title=%F0%9F%9A%80+Feature+request+%3A+%5B+FEATURE+NAME+%5D",
+    href: "#",
     icon: FlagIcon,
     description: `Want to see a specific type of component that's not already here? Ask and you shall receive.`,
   },
   {
     name: "Report Bug",
-    href: "https://github.com/A-HK/TailMagic-tailwind-gpt3/issues/new?assignees=&labels=&template=%F0%9F%90%9B-bug-report.md&title=%F0%9F%90%9B+Bug+report+%3A+%5B+BUG+%5D",
+    href: "#",
     icon: BugAntIcon,
     description: `Complaints, compliments or suggestions? Feel free to leave your feedback here.`,
   },
@@ -152,22 +152,22 @@ export default function AltNavBar() {
                   >
                     <Popover.Panel className="absolute z-10 -ml-4 mt-3 w-screen max-w-xl transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2">
                       <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-                        <div className="relative grid grid-cols-2 gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+                        <div className="relative grid grid-cols-2 gap-6 bg-gray-700 px-5 py-6 sm:gap-8 sm:p-8">
                           {components.map((item) => (
                             <a
                               key={item.name}
                               href={item.href}
-                              className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                              className="-m-3 flex items-start rounded-lg p-3 hover:outline hover:outline-1 hover:outline-blue-300"
                             >
                               <item.icon
                                 className="h-6 w-6 flex-shrink-0 text-teal-400"
                                 aria-hidden="true"
                               />
                               <div className="ml-4">
-                                <p className="text-base font-medium text-slate-300">
+                                <p className="text-base font-medium text-white">
                                   {item.name}
                                 </p>
-                                <p className="mt-1 text-sm text-slate-300">
+                                <p className="mt-1 text-sm text-white">
                                   {item.description}
                                 </p>
                               </div>
@@ -234,22 +234,22 @@ export default function AltNavBar() {
                   >
                     <Popover.Panel className="absolute left-1/2 z-10 mt-3 w-screen max-w-sm -translate-x-1/2 transform px-2 sm:px-0">
                       <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-                        <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+                        <div className="relative grid gap-6 bg-gray-700 px-5 py-6 sm:gap-8 sm:p-8 !text-white">
                           {callsToAction.map((item) => (
                             <a
                               key={item.name}
                               href={item.href}
-                              className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                              className="-m-3 flex items-start rounded-lg p-3 hover:outline  hover:outline-1 hover:outline-blue-300"
                             >
                               <item.icon
                                 className="h-6 w-6 flex-shrink-0 text-teal-400"
                                 aria-hidden="true"
                               />
                               <div className="ml-4">
-                                <p className="text-base font-medium text-black">
+                                <p className="text-base font-medium text-white">
                                   {item.name}
                                 </p>
-                                <p className="mt-1 text-sm text-black">
+                                <p className="mt-1 text-sm text-white">
                                   {item.description}
                                 </p>
                               </div>
