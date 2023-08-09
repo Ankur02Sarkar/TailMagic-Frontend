@@ -1,4 +1,13 @@
-#output{
-    background-size: 40px 40px;
-    background-image: radial-gradient(circle, #a4f5e9 1.5px, rgba(0, 0, 0, 0) 1px);
+#output {
+  background-size: 40px 40px;
+  background-image: radial-gradient(
+    circle,
+    #a4f5e9 1.5px,
+    rgba(0, 0, 0, 0) 1px
+  );
+}
+
+body {
+  background: #374151;
+  overflow-x: clip;
 }

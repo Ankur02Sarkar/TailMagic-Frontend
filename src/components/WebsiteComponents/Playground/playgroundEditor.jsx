@@ -83,8 +83,8 @@ export default function EmptyState() {
       className="flex flex-col block items-center justify-center w-3/4 h-1/2 rounded-lg p-12 text-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500"
     >
       <SquaresPlusIcon className="h-16 w-16 text-slate-300 inline-block text-light"/>
-      <span className="mt-2 inline-block text-lg font-medium text-slate-300 tracking-wider">No component to display yet</span>
-      <span className="mt-2 inline-block text-md tracking-wider font-medium text-slate-300 tracking-wider">Get started - Create a new component to witness the magic </span>
+      <span className="mt-2 inline-block text-lg font-medium text-gray-500 tracking-wider">No component to display yet</span>
+      <span className="mt-2 inline-block text-md tracking-wider font-medium text-gray-500 tracking-wider">Get started - Create a new component to witness the magic </span>
    
     </div>
     

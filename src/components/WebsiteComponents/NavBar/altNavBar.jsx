@@ -174,19 +174,6 @@ export default function AltNavBar() {
                             </a>
                           ))}
                         </div>
-                        <div className="space-y-6 bg-gray-50 px-5 py-5 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
-                          {/* {callsToAction.map((item) => (
-                            <div key={item.name} className="flow-root">
-                              <a
-                                href={item.href}
-                                className="-m-3 flex items-center rounded-md p-3 text-sm font-medium text-slate-300 hover:bg-gray-100"
-                              >
-                                <item.icon className="h-6 w-6 flex-shrink-0 text-slate-300" aria-hidden="true" />
-                                <span className="ml-3">{item.name}</span>
-                              </a>
-                            </div>
-                          ))} */}
-                        </div>
                       </div>
                     </Popover.Panel>
                   </Transition>
@@ -293,13 +280,13 @@ export default function AltNavBar() {
           focus
           className="absolute inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden"
         >
-          <div className="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
+          <div className="divide-y-2 divide-gray-50 rounded-lg bg-[#374151] shadow-lg ring-1 ring-black ring-opacity-5">
             <div className="px-5 pt-5 pb-6">
               <div className="flex items-center justify-between">
                 <div>
                   <img
                     className="h-8 w-auto"
-                    src="/lekhak-inverted.png"
+                    src="/icon.png"
                     alt="TailMagic"
                   />
                 </div>
@@ -322,46 +309,12 @@ export default function AltNavBar() {
                         className="h-6 w-6 flex-shrink-0 text-teal-400"
                         aria-hidden="true"
                       />
-                      <span className="ml-3 text-base font-medium text-slate-300">
+                      <span className="ml-3 text-base font-medium text-black">
                         {item.name}
                       </span>
                     </a>
                   ))}
                 </nav>
-              </div>
-            </div>
-            <div className="space-y-6 py-6 px-5">
-              <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                <a
-                  href="/playground"
-                  className="text-base font-medium text-slate-300 hover:text-slate-300"
-                >
-                  Playground
-                </a>
-
-                <a
-                  href="#"
-                  className="text-base font-medium text-slate-300 hover:text-slate-300"
-                >
-                  How it works
-                </a>
-                {/* {resources.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className="text-base font-medium text-black hover:text-slate-300"
-                  >
-                    {item.name}
-                  </a>
-                ))} */}
-              </div>
-              <div className="py-6">
-                <a
-                  href="/playground"
-                  className="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-6 text-slate-300 hover:bg-gray-300/10 hover:text-teal-400"
-                >
-                  Try It Now
-                </a>
               </div>
             </div>
           </div>

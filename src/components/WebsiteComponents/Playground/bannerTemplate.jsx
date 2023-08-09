@@ -1,6 +1,6 @@
 export default function Banner() {
   return (
-    <div className="w-full isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 py-2.5 px-6 sm:px-3.5 sm:before:flex-1">
+    <div style={{borderRadius:"25px 25px 0 0 "}} className="w-full isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 py-2.5 px-6 sm:px-3.5 sm:before:flex-1">
       <svg
         viewBox="0 0 577 310"
         aria-hidden="true"
@@ -34,7 +34,7 @@ export default function Banner() {
         <use href="#1d77c128-3ec1-4660-a7f6-26c7006705ad" />
       </svg>
       <div className="flex flex-wrap items-center justify-center gap-y-2 gap-x-4">
-        <p className="text-sm leading-6 text-slate-300">
+        <p className="text-sm leading-6 text-gray-500">
           <strong className="font-semibold">Not seeing what you're expecting?</strong>
           <svg viewBox="0 0 2 2" className="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true">
             <circle cx={1} cy={1} r={1} />

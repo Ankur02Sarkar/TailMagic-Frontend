@@ -40,7 +40,7 @@ function Playground() {
      <Helmet>
         <title>TailMagic | Playground</title>
       </Helmet>
-    <div className="playground h-screen px-10 isolate bg-white grid grid-rows-7">
+    <div className="playground h-screen px-10 isolate bg-[#374151] grid grid-rows-7">
       <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
         <svg
           className="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]"
@@ -70,7 +70,7 @@ function Playground() {
       </div>
       <header className="playground-header font-bold text-2xl py-4 px-6 flex items-center justify-between row-span-1">
         <div className="flex items-center justify-start">
-          <h1 className="inline-block p-2 text-3xl font-black tracking-wide">Playground <sup className="font-semibold bg-teal-400 text-xs px-2 text-slate-300 rounded-lg">beta</sup></h1>
+          <h1 className="inline-block p-2 text-3xl font-black tracking-wide">TailorSpace</h1>
         </div>
         <div className="flex flex-row items-center justify-end">
           {/* <div>
